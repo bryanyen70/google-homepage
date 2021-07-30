@@ -2,19 +2,42 @@
 <head>
     <style>
         #navbar{
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100%
+        }
+         ul{
+            list-style-type: none;
+            width:100%;
+
+            display:flex;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+            padding:10px;
 
         }
+        #nav-li-3{
+            margin-left:auto; /* Separates the elem in navbar. Auto margin will take up all the space it can in the axis */
+        }
+        ul li:hover{
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
 
+        
     </style>
     
     <nav id="navbar">
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">Gmail</a></li>
-            <li><a href="#">Images</a></li>
-            <li><a href="#">Setting Icon</a></li>
-            <li><a href="#">Login Icon</a></li>
+            <li id="nav-li-1"><a href="#">About</a></li>
+            <li id="nav-li-2"><a href="#">Store</a></li>
+            <li id="nav-li-3"><a href="#">Gmail</a></li>
+            <li id="nav-li-4"><a href="#">Images</a></li>
+            <li id="nav-li-5"><a href="#">Setting Icon</a></li>
+            <li id="nav-li-6"><a href="#">Login Icon</a></li>
         </ul>
     </nav>
 </head>
