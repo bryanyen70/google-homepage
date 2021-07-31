@@ -37,7 +37,30 @@
         #img-google{
             width:231px;
         }
-        
+        #input-googleSearch{
+            -webkit-appearance: none; /* allows setting height */
+            width:497px;
+            height: 40px;
+            border-radius: 20px;
+            margin:22px;
+
+            border-style: solid;
+            border-width: 0.5px;
+            border-color: #C8C8C8;
+            outline: none;  
+
+            background-image: url('https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png');
+            background-repeat: no-repeat;
+            background-position: left 15px center;
+            background-size:15px;
+            padding-inline-start: 33px;  
+            font-size: 14px;      
+        }
+        #input-googleSearch:hover{
+            box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.067);
+            border-style: none;
+  
+        }
     </style>
     
     <nav id="navbar">
@@ -54,7 +77,7 @@
 
 <body>
     <img id="img-google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google image">
-    <input type="search">
+    <input id="input-googleSearch" type="search">
     <div>
         <input type="button" value="Google Search">
         <input type="button" value="I'm Feeling Lucky">
