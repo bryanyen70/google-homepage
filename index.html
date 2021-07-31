@@ -17,7 +17,6 @@
             text-decoration: none;
             color: black;
             padding:10px;
-
         }
         #nav-li-3{
             margin-left:auto; /* Separates the elem in navbar. Auto margin will take up all the space it can in the axis */
@@ -27,6 +26,17 @@
             text-underline-offset: 2px;
         }
 
+        /* Body */
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top:136px;
+
+        }
+        #img-google{
+            width:231px;
+        }
         
     </style>
     
@@ -43,7 +53,7 @@
 </head>
 
 <body>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google image">
+    <img id="img-google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google image">
     <input type="search">
     <div>
         <input type="button" value="Google Search">
