@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <head>
     <style>
+        a{
+            font-size: 12px;
+            font-family: arial;
+        }
         #navbar{
             position:fixed;
             top:0px;
@@ -9,14 +13,15 @@
         }
          ul{
             list-style-type: none;
-            width:100%;
-
             display:flex;
         }
         ul li a{
             text-decoration: none;
             color: black;
             padding:10px;
+        }
+        #nav-li-1{
+            margin-left:0px;
         }
         #nav-li-3{
             margin-left:auto; /* Separates the elem in navbar. Auto margin will take up all the space it can in the axis */
@@ -84,6 +89,80 @@
             box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.149);
         } 
 
+        /* Footer Section */
+        #footer{
+            position: absolute;
+            bottom:0px;
+            left:0px;
+            width:100%;
+            height: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #F5F5F5;
+        }
+        #footer a{
+            text-decoration: none;
+            color: #505050;
+        }
+        #img-leaf{
+            width:12px;
+            padding-right:5px;
+        }
+        #footer-linkTitle{
+            position: absolute;
+            width:100%;
+            text-align: center;
+        }
+        #footer-links {
+            width:100%;
+            display: flex;
+            justify-content:flex-start;
+        }
+        #footer-links a{
+            text-decoration: none;
+            color: #505050;
+        }
+        #footer-link1{
+            margin-left:28px;
+        }
+        #footer-link2{
+            margin-left:28px;
+        }
+        #footer-link3{
+            margin-left:28px;
+        }
+        #footer-link4{
+            margin-left:auto;
+            margin-right:28px;
+        }
+        #footer-link5{
+            margin-right:28px;
+        }
+        #footer-link6{
+            margin-right:28px;
+        }
+
+        @media (max-width:1020px){
+            #footer{
+                height:80px;
+            }
+            #footer-linkTitle{
+                top:0px;
+                margin-top:11px;
+            }
+            #footer-links a{
+                margin-top:40px;
+            }
+            #footer-link1{
+                margin-left:158px auto;
+            }
+            #footer-link6{
+                margin-right:158px auto;
+            }
+        }
+
     </style>
     
     <nav id="navbar">
@@ -93,7 +172,7 @@
             <li id="nav-li-3"><a href="#">Gmail</a></li>
             <li id="nav-li-4"><a href="#">Images</a></li>
             <li id="nav-li-5"><a href="#">Setting Icon</a></li>
-            <li id="nav-li-6"><a href="#">Login Icon</a></li>
+            <li id="nav-li-6"><a href="#">Login</a></li>
         </ul>
     </nav>
 </head>
@@ -109,14 +188,14 @@
 
 <footer>
     <div id="footer">
-        <a href="#"><img src="#" alt="footer image">Carbon neutral since 2007</a>
+        <a id="footer-linkTitle" href="#"><img id="img-leaf" src="file:///Users/BryanYen/Desktop/clipart501322.png" alt="footer image">Carbon neutral since 2007</a>
         <div id="footer-links">
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">How Search Works</a>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Settings</a>
+            <a id="footer-link1" href="#">Advertising</a>
+            <a id="footer-link2" href="#">Business</a>
+            <a id="footer-link3" href="#">How Search Works</a>
+            <a id="footer-link4" href="#">Privacy</a>
+            <a id="footer-link5" href="#">Terms</a>
+            <a id="footer-link6" href="#">Settings</a>
         </div>
     </div>
 </footer>
