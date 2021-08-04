@@ -28,8 +28,9 @@ ul li:hover{
     text-underline-offset: 2px;
 }
 #icon-settings, #icon-profile{
-    height:18px;
-    border-radius: 20%;
+    height:25px;
+    width:25px;
+    border-radius: 50%;
 }
 #icon-settings:hover, #icon-profile:hover{
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.142);
@@ -42,17 +43,21 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top:136px;
+    font:14px arial;
 
 }
 #img-google{
     width:231px;
 }
+#googleSearch-container{
+    width:497px;
+    margin:22px;
+}
 #input-googleSearch{
     -webkit-appearance: none; /* allows setting height */
-    width:497px;
+    width:100%;
     height: 40px;
     border-radius: 20px;
-    margin:22px;
 
     border-style: solid;
     border-width: 0.5px;
@@ -70,7 +75,12 @@ body{
     box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.067);
     border-style: none;
 }
+#input-googleSearch:focus{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 
+    
+}
 #div-btns{
     min-width: 243px;
 }
@@ -93,6 +103,34 @@ body{
 #btn-search:hover, #btn-lucky:hover{
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.149);
 } 
+
+/* dropdown list */
+.autocomplete-items { 
+    position: relative;
+    box-shadow: 0px 4px 3px 3px rgba(0, 0, 0, 0.067);
+    background-color: white;
+    border-bottom: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+  }
+  /* Each item in list */
+.autocomplete-items div { 
+    padding: 6px;
+    cursor: pointer;
+    background-color: #fff; 
+}
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: #e9e9e9 !important; 
+}
 /* Body */
 
 /* Footer */

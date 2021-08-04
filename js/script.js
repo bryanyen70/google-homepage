@@ -95,8 +95,8 @@ function autocomplete(inp, arr) {
     });
 }
 
-/*An array containing all the country names in the world:*/
-var countries = ["aa"];
+/*An array containing suggestions*/
+var suggestions = ["youtube","facebook","amazon","gmail","google","yahoo","yahoo mail","weather","netflix","walmart","ebay","google translate","home depot","usps tracking","translate","craigslist","fox news","google docs","news","google maps","roblox","cnn","lowes","calculator","amazon prime","paypal","speed test","hotmail","target","google drive","instagram","zillow","twitter","best buy","bank of america","wells fargo","maps","hulu","discord","ups tracking","trump","costco","reddit","indeed","disney plus","usps","pinterest","espn","etsy","linkedin","twitch","facebook login","doodle for google","dow joness","fedex tracking","capital one","chase","aol","dominos","airbnb","spotify","bing","internet speed test","outlook","you","walgreens","finance","entertainment","pizza hut","restaurants near me","youtube to mp3","macys","google news","xfinity","turbotax","amazon prime video","pandora","timer","yahoo finance","zoom","verizon","robinhood"];
 
-/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-autocomplete(document.getElementById("input-googleSearch"), countries);
+/*initiate the autocomplete function on the "search" element, and pass along the search array as possible autocomplete values:*/
+autocomplete(document.getElementById("input-googleSearch"), suggestions);
