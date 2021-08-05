@@ -7,7 +7,7 @@ a{
     position:fixed;
     top:0px;
     left:0px;
-    width:100%
+    width:100%;
 }
 ul{
     list-style-type: none;
@@ -19,6 +19,9 @@ ul li a{
     text-decoration: none;
     color: black;
     padding:9px; /* padding between nav items */
+}
+#nav-li-1, #nav-li-2, #nav-li-3, #nav-li-4{
+    padding-top:5px;
 }
 #nav-li-3{
     margin-left:auto; /* Separates the elem in navbar. Auto margin will take up all the space it can in the axis */
@@ -34,6 +37,7 @@ ul li:hover{
 }
 #icon-settings:hover, #icon-profile:hover{
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.142);
+    background-color:rgba(0, 0, 0, 0.142);
 }
 /* Head */
 
@@ -154,7 +158,7 @@ body{
     width:12px;
     padding-right:5px;
 }
-#footer-linkTitle{
+#footer-div-linkTitle{
     position: absolute;
     width:100%;
     text-align: center;
@@ -168,35 +172,47 @@ body{
     text-decoration: none;
     color: #505050;
 }
+#footer-linkTitle{
+    z-index: 99;
+}
 #footer-link1{
     margin-left:28px;
+    z-index: 99;
 }
 #footer-link2{
     margin-left:28px;
+    z-index: 99;
 }
 #footer-link3{
     margin-left:28px;
+    z-index: 99;
 }
 #footer-link4{
     margin-left:auto;
     margin-right:28px;
+    z-index: 99;
 }
 #footer-link5{
     margin-right:28px;
+    z-index: 99;
 }
 #footer-link6{
     margin-right:28px;
+    z-index: 99;
 }
-#footer-links a:hover, #footer-linkTitle:hover{
+#footer-linkTitle:hover{
     text-decoration: underline;
     text-underline-offset: 2px;
+}
+#footer-links a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width:1020px){
     #footer{
         height:80px;
     }
-    #footer-linkTitle{
+    #footer-div-linkTitle{
         top:0px;
         margin-top:11px;
     }
@@ -204,10 +220,10 @@ body{
         margin-top:40px;
     }
     #footer-link1{
-        margin-left:158px auto;
+        margin-left: auto;
     }
     #footer-link6{
-        margin-right:158px auto;
+        margin-right: auto;
     }
 }
 /* Footer */
